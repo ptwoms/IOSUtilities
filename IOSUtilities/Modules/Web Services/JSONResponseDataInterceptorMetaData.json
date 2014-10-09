@@ -1,0 +1,10 @@
+{
+    "WebServiceTag1": {
+        "keyname1": "remove",
+        "keyname2": "remove",
+        "keyname3-valuename3": "dosomeoperation"
+    },
+    "WebServiceTag2": {
+        "keyname5": "remove"
+    }
+}

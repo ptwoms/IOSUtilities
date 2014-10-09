@@ -19,6 +19,9 @@
 		C83906A61951B80200AB4BF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C839068E1951B80200AB4BF5 /* UIKit.framework */; };
 		C83906AE1951B80200AB4BF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C83906AC1951B80200AB4BF5 /* InfoPlist.strings */; };
 		C83906B01951B80200AB4BF5 /* IOSUtilitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C83906AF1951B80200AB4BF5 /* IOSUtilitiesTests.m */; };
+		C845FD3C19E6EAD400DDC705 /* JSONResponseDataInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C845FD3B19E6EAD400DDC705 /* JSONResponseDataInterceptor.m */; };
+		C845FD3E19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json in Resources */ = {isa = PBXBuildFile; fileRef = C845FD3D19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json */; };
+		C8B226DD1951DF8F00A3B6DA /* P2MSTransitionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B226DC1951DF8F00A3B6DA /* P2MSTransitionUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		C83906AB1951B80200AB4BF5 /* IOSUtilitiesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSUtilitiesTests-Info.plist"; sourceTree = "<group>"; };
 		C83906AD1951B80200AB4BF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C83906AF1951B80200AB4BF5 /* IOSUtilitiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSUtilitiesTests.m; sourceTree = "<group>"; };
+		C845FD3A19E6EAD400DDC705 /* JSONResponseDataInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseDataInterceptor.h; sourceTree = "<group>"; };
+		C845FD3B19E6EAD400DDC705 /* JSONResponseDataInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONResponseDataInterceptor.m; sourceTree = "<group>"; };
+		C845FD3D19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONResponseDataInterceptorMetaData.json; sourceTree = "<group>"; };
+		C8B226DB1951DF8F00A3B6DA /* P2MSTransitionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2MSTransitionUtilities.h; sourceTree = "<group>"; };
+		C8B226DC1951DF8F00A3B6DA /* P2MSTransitionUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2MSTransitionUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,12 @@
 		C83906901951B80200AB4BF5 /* IOSUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				C845FD3819E6EA6E00DDC705 /* Modules */,
+				C85318F41957BC99001957B9 /* Utilities */,
+				C8B226DA1951DF4000A3B6DA /* UI */,
+				C8B226D61951DB8A00A3B6DA /* Cateogories */,
+				C83906BB1951BCC100AB4BF5 /* Views */,
+				C83906BA1951BC9200AB4BF5 /* View Controllers */,
 				C83906991951B80200AB4BF5 /* P2MSAppDelegate.h */,
 				C839069A1951B80200AB4BF5 /* P2MSAppDelegate.m */,
 				C839069C1951B80200AB4BF5 /* Images.xcassets */,
@@ -142,6 +156,61 @@
 				C83906AC1951B80200AB4BF5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C83906BA1951BC9200AB4BF5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C83906BB1951BCC100AB4BF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C845FD3819E6EA6E00DDC705 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C845FD3919E6EAB200DDC705 /* Web Services */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C845FD3919E6EAB200DDC705 /* Web Services */ = {
+			isa = PBXGroup;
+			children = (
+				C845FD3A19E6EAD400DDC705 /* JSONResponseDataInterceptor.h */,
+				C845FD3B19E6EAD400DDC705 /* JSONResponseDataInterceptor.m */,
+				C845FD3D19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json */,
+			);
+			path = "Web Services";
+			sourceTree = "<group>";
+		};
+		C85318F41957BC99001957B9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C8B226D61951DB8A00A3B6DA /* Cateogories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cateogories;
+			sourceTree = "<group>";
+		};
+		C8B226DA1951DF4000A3B6DA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C8B226DB1951DF8F00A3B6DA /* P2MSTransitionUtilities.h */,
+				C8B226DC1951DF8F00A3B6DA /* P2MSTransitionUtilities.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83906951951B80200AB4BF5 /* InfoPlist.strings in Resources */,
+				C845FD3E19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json in Resources */,
 				C839069D1951B80200AB4BF5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B226DD1951DF8F00A3B6DA /* P2MSTransitionUtilities.m in Sources */,
 				C839069B1951B80200AB4BF5 /* P2MSAppDelegate.m in Sources */,
+				C845FD3C19E6EAD400DDC705 /* JSONResponseDataInterceptor.m in Sources */,
 				C83906971951B80200AB4BF5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +512,7 @@
 				C83906B51951B80200AB4BF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C83906B61951B80200AB4BF5 /* Build configuration list for PBXNativeTarget "IOSUtilitiesTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +521,7 @@
 				C83906B81951B80200AB4BF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
