@@ -19,6 +19,9 @@
 		C83906A61951B80200AB4BF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C839068E1951B80200AB4BF5 /* UIKit.framework */; };
 		C83906AE1951B80200AB4BF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C83906AC1951B80200AB4BF5 /* InfoPlist.strings */; };
 		C83906B01951B80200AB4BF5 /* IOSUtilitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C83906AF1951B80200AB4BF5 /* IOSUtilitiesTests.m */; };
+		C841A8A71A20E274001702B1 /* NSURLRequest+P2MSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C841A8A61A20E274001702B1 /* NSURLRequest+P2MSAddition.m */; };
+		C841A8AA1A20E43C001702B1 /* NSMutableURLRequest+P2MSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C841A8A91A20E43C001702B1 /* NSMutableURLRequest+P2MSAddition.m */; };
+		C8438DA119ECD23F00B77D75 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = C8438DA019ECD23F00B77D75 /* NSBundle+Language.m */; };
 		C845FD3C19E6EAD400DDC705 /* JSONResponseDataInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C845FD3B19E6EAD400DDC705 /* JSONResponseDataInterceptor.m */; };
 		C845FD3E19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json in Resources */ = {isa = PBXBuildFile; fileRef = C845FD3D19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json */; };
 		C8B226DD1951DF8F00A3B6DA /* P2MSTransitionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B226DC1951DF8F00A3B6DA /* P2MSTransitionUtilities.m */; };
@@ -51,6 +54,12 @@
 		C83906AB1951B80200AB4BF5 /* IOSUtilitiesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSUtilitiesTests-Info.plist"; sourceTree = "<group>"; };
 		C83906AD1951B80200AB4BF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C83906AF1951B80200AB4BF5 /* IOSUtilitiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSUtilitiesTests.m; sourceTree = "<group>"; };
+		C841A8A51A20E274001702B1 /* NSURLRequest+P2MSAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+P2MSAddition.h"; sourceTree = "<group>"; };
+		C841A8A61A20E274001702B1 /* NSURLRequest+P2MSAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+P2MSAddition.m"; sourceTree = "<group>"; };
+		C841A8A81A20E43C001702B1 /* NSMutableURLRequest+P2MSAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+P2MSAddition.h"; sourceTree = "<group>"; };
+		C841A8A91A20E43C001702B1 /* NSMutableURLRequest+P2MSAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+P2MSAddition.m"; sourceTree = "<group>"; };
+		C8438D9F19ECD23F00B77D75 /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		C8438DA019ECD23F00B77D75 /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		C845FD3A19E6EAD400DDC705 /* JSONResponseDataInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseDataInterceptor.h; sourceTree = "<group>"; };
 		C845FD3B19E6EAD400DDC705 /* JSONResponseDataInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONResponseDataInterceptor.m; sourceTree = "<group>"; };
 		C845FD3D19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONResponseDataInterceptorMetaData.json; sourceTree = "<group>"; };
@@ -115,10 +124,10 @@
 		C83906901951B80200AB4BF5 /* IOSUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				C841A8A41A20E264001702B1 /* Cateogories */,
 				C845FD3819E6EA6E00DDC705 /* Modules */,
 				C85318F41957BC99001957B9 /* Utilities */,
 				C8B226DA1951DF4000A3B6DA /* UI */,
-				C8B226D61951DB8A00A3B6DA /* Cateogories */,
 				C83906BB1951BCC100AB4BF5 /* Views */,
 				C83906BA1951BC9200AB4BF5 /* View Controllers */,
 				C83906991951B80200AB4BF5 /* P2MSAppDelegate.h */,
@@ -172,9 +181,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C841A8A41A20E264001702B1 /* Cateogories */ = {
+			isa = PBXGroup;
+			children = (
+				C841A8A51A20E274001702B1 /* NSURLRequest+P2MSAddition.h */,
+				C841A8A61A20E274001702B1 /* NSURLRequest+P2MSAddition.m */,
+				C841A8A81A20E43C001702B1 /* NSMutableURLRequest+P2MSAddition.h */,
+				C841A8A91A20E43C001702B1 /* NSMutableURLRequest+P2MSAddition.m */,
+			);
+			path = Cateogories;
+			sourceTree = "<group>";
+		};
+		C8438D9E19ECD22200B77D75 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				C8438D9F19ECD23F00B77D75 /* NSBundle+Language.h */,
+				C8438DA019ECD23F00B77D75 /* NSBundle+Language.m */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
 		C845FD3819E6EA6E00DDC705 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C8438D9E19ECD22200B77D75 /* Languages */,
 				C845FD3919E6EAB200DDC705 /* Web Services */,
 			);
 			path = Modules;
@@ -195,13 +225,6 @@
 			children = (
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		C8B226D61951DB8A00A3B6DA /* Cateogories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cateogories;
 			sourceTree = "<group>";
 		};
 		C8B226DA1951DF4000A3B6DA /* UI */ = {
@@ -310,7 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C841A8A71A20E274001702B1 /* NSURLRequest+P2MSAddition.m in Sources */,
 				C8B226DD1951DF8F00A3B6DA /* P2MSTransitionUtilities.m in Sources */,
+				C8438DA119ECD23F00B77D75 /* NSBundle+Language.m in Sources */,
+				C841A8AA1A20E43C001702B1 /* NSMutableURLRequest+P2MSAddition.m in Sources */,
 				C839069B1951B80200AB4BF5 /* P2MSAppDelegate.m in Sources */,
 				C845FD3C19E6EAD400DDC705 /* JSONResponseDataInterceptor.m in Sources */,
 				C83906971951B80200AB4BF5 /* main.m in Sources */,

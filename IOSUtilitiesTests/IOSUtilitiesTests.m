@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSMutableURLRequest+P2MSAddition.h"
+#import "NSURLRequest+P2MSAddition.h"
 
 @interface IOSUtilitiesTests : XCTestCase
 
@@ -26,9 +28,14 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testNSURLRequestUserAgent
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSMutableURLRequest *newRequest = [[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:@"http://www.google.com"]];
+    NSString *userAgentString = [NSURLRequest defaultUserAgentString];
+    [newRequest appendUserAgentString:@" myAppendedString"];
 }
+
+
 
 @end
