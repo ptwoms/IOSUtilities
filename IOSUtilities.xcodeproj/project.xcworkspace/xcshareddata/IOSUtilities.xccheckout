@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2C3B8E92-BC59-4537-93D6-29FF55211458</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IOSUtilities</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D153752AAE11385EDAC1682B13BFEE0141FFDC55</key>
+		<string>https://github.com/ptwoms/IOSUtilities.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOSUtilities.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D153752AAE11385EDAC1682B13BFEE0141FFDC55</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ptwoms/IOSUtilities.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D153752AAE11385EDAC1682B13BFEE0141FFDC55</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D153752AAE11385EDAC1682B13BFEE0141FFDC55</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOSUtilities</string>
+		</dict>
+	</array>
+</dict>
+</plist>

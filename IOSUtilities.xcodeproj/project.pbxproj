@@ -24,6 +24,7 @@
 		C8438DA119ECD23F00B77D75 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = C8438DA019ECD23F00B77D75 /* NSBundle+Language.m */; };
 		C845FD3C19E6EAD400DDC705 /* JSONResponseDataInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C845FD3B19E6EAD400DDC705 /* JSONResponseDataInterceptor.m */; };
 		C845FD3E19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json in Resources */ = {isa = PBXBuildFile; fileRef = C845FD3D19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json */; };
+		C85F0A8A1A78804D003AEC45 /* P2MSUserAgentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C85F0A891A78804D003AEC45 /* P2MSUserAgentHelper.m */; };
 		C8B226DD1951DF8F00A3B6DA /* P2MSTransitionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B226DC1951DF8F00A3B6DA /* P2MSTransitionUtilities.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		C845FD3A19E6EAD400DDC705 /* JSONResponseDataInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseDataInterceptor.h; sourceTree = "<group>"; };
 		C845FD3B19E6EAD400DDC705 /* JSONResponseDataInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONResponseDataInterceptor.m; sourceTree = "<group>"; };
 		C845FD3D19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONResponseDataInterceptorMetaData.json; sourceTree = "<group>"; };
+		C85F0A881A78804D003AEC45 /* P2MSUserAgentHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2MSUserAgentHelper.h; sourceTree = "<group>"; };
+		C85F0A891A78804D003AEC45 /* P2MSUserAgentHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2MSUserAgentHelper.m; sourceTree = "<group>"; };
 		C8B226DB1951DF8F00A3B6DA /* P2MSTransitionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2MSTransitionUtilities.h; sourceTree = "<group>"; };
 		C8B226DC1951DF8F00A3B6DA /* P2MSTransitionUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2MSTransitionUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,6 +219,8 @@
 				C845FD3A19E6EAD400DDC705 /* JSONResponseDataInterceptor.h */,
 				C845FD3B19E6EAD400DDC705 /* JSONResponseDataInterceptor.m */,
 				C845FD3D19E6EB8B00DDC705 /* JSONResponseDataInterceptorMetaData.json */,
+				C85F0A881A78804D003AEC45 /* P2MSUserAgentHelper.h */,
+				C85F0A891A78804D003AEC45 /* P2MSUserAgentHelper.m */,
 			);
 			path = "Web Services";
 			sourceTree = "<group>";
@@ -333,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85F0A8A1A78804D003AEC45 /* P2MSUserAgentHelper.m in Sources */,
 				C841A8A71A20E274001702B1 /* NSURLRequest+P2MSAddition.m in Sources */,
 				C8B226DD1951DF8F00A3B6DA /* P2MSTransitionUtilities.m in Sources */,
 				C8438DA119ECD23F00B77D75 /* NSBundle+Language.m in Sources */,

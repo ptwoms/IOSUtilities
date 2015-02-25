@@ -7,6 +7,7 @@
 //
 
 #import "P2MSAppDelegate.h"
+#import "P2MSUserAgentHelper.h"
 
 @implementation P2MSAppDelegate
 
@@ -16,6 +17,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    NSLog(@"User Agent %@", [P2MSUserAgentHelper getUserAgentString]);
     return YES;
 }
 
