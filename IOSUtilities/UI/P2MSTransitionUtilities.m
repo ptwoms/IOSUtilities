@@ -11,7 +11,11 @@
 @implementation P2MSTransitionUtilities
 
 + (CGRect)convertRect:(CGRect)rect containerRect:(CGRect)containerRect toInterfaceOrientation:(UIInterfaceOrientation)orientation{
+    if ([[[UIDevice currentDevice]systemVersion]floatValue] >= 8.0) {
+        return rect;
+    }
     CGRect frame;
+    
     switch (orientation)
     {
         case UIInterfaceOrientationLandscapeRight:
